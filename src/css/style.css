@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+body {
+  background: #C6FFDD;
+  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+  padding: 0 15px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ctn_box_title,
+.ctn_box_inputs {
+
+  background: #ffffff88;
+  align-items: center;
+  display: flex;
+}
+
+.ctn_box_title {
+  border-bottom-left-radius: 0.9em;
+  height: 3em;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #6bb99c;
+  padding: 0.9em;
+  margin-bottom: 0.85em;
+}
+
+
+.ctn_box_inputs {
+  border-top-left-radius: 0.9em;
+  border-top-right-radius: 0.9em;
+  height: 4em;
+  padding: 0.9em;
+}
+
+select,
+input,
+#res button {
+  position: relative;
+  border: 2px solid #6bb99c;
+  outline: none;
+  width: 18em;
+  padding: 0 0.6em;
+  min-width: 12.5em;
+  height: 2.7em;
+  margin: 0 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 10px;
+}
+
+.ctn_box_inputs button {
+  padding: 10px;
+  width: 15%;
+  background: #6bb99cd5;
+  border: 2px solid #6bb99c;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button {
+  background: #6bb99cd5;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover,
+.ctn_box_inputs button:hover {
+  background: #6bb99c94;
+}
+
+option:hover {
+  outline: none;
+}
+
+.con_box_back {
+  background: #ffffff6b;
+  height: auto;
+  margin: 0 0 20px 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+}
+
+#Resultado {
+  margin: 5px 0 0 0;
+  background: white;
+  height: auto;
+  padding: 10px 5px;
+
+}
+
+#Resultado p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  color: #6b89b9;
+}
+
+.ctn_box_inputs:hover,
+/* .ctn_box_title p:hover, */
+#res div>h3:hover {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+#res {
+  margin-top: 10px;
+  height: 60px;
+  display: flex;
+  border: 2px solid #6b89b9;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#res button {
+  width: 50px;
+  min-width: 30px;
+
+}
+
+
+#res div {
+  height: 45px;
+  width: 20%;
+  border: 2px solid #6b89b9;
+  border-top: 0;
+  border-bottom: 0;
+  margin: 0 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+#res div>h3 {
+  background: #6b89b93a;
+  border-bottom: 1px solid #7d9cce;
+  font-family: 'Kanit', sans-serif;
+
+  padding-left: 10px;
+}
+
+#res div>p {
+  font-size: 1em;
+
+}
+
+.otrosplanes {
+  padding: 5px;
+  display: flex;
+  background: white;
+  margin: 5px 0;
+  flex-direction: column;
+}
+
+.otrosplanes p {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  color: #6b89b9;
+  text-align: center;
+  padding: 2px;
+}
+
+.vermas {
+  height: 25px;
+  background: white;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  color: #6b89b9;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.vermas:hover {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  background: rgb(238, 236, 236);
+}
+
+
+
+#feedback {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  display: flex;
+  background: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#feedback img {
+  height: 6em;
+  margin: 5px;
+  display: none;
+}
+
+.feed {
+  cursor: pointer;
+  color: red;
+  background: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin: 0;
+  padding: 2px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  white-space: nowrap;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.feed span {
+  transform: rotate(180deg);
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.heart {
+  transform: rotate(-90deg);
+}

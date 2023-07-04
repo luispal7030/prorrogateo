@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<!-- onkeyup="filtrarOpciones()" -->
+
+<body>
+    <div id="content">
+        <div class="ctn_box_title">
+            <p> CONSULTAR FACTURACION MOVIL </p>
+        </div>
+        <div class="con_box_back">
+            <div class="ctn_box_inputs">
+
+                <input id="DIA" type="number" min="1" max="31" placeholder=" DIA DE ACTIVACION"
+                    onkeyup="verificarCicloDia()">
+                <select name="PLAN" id="PLAN">
+
+
+
+
+                </select>
+                <select name="CICLO" id="CICLO">
+
+
+
+
+                </select>
+                <button onclick="calcular()">CONSULTAR</button>
+
+
+
+            </div>
+            <!-- -- -->
+            <div id="Resultado">
+                <p> |- Realiza tu consulta -| </p>
+
+            </div>
+            <div class="vermas" onclick="toggleDiv('cerrar');">
+                <p>^Ver todos los planes^</p>
+            </div>
+            <div class="otrosplanes" id="cerrar">
+
+            </div>
+        </div>
+
+
+    </div>
+    <div id="feedback" onclick="toggleDiv('qrimg')">
+        <div class="feed">
+            <ion-icon class="heart" name="heart"></ion-icon>
+            <span>k</span>
+            <span>c</span>
+            <span>a</span>
+            <span>B</span>
+            <span>d</span>
+            <span>e</span>
+            <span>e</span>
+            <span>F</span>
+        </div>
+        <img id="qrimg" src="./assets/img/qrITEM.jpg" alt="danos tu apoyo">
+    </div>
+
+
+
+
+
+    <script src="./src/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
